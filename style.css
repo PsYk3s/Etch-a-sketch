@@ -1,0 +1,10 @@
+.container {
+    min-width: 600px ;
+    margin: auto;
+}
+
+.block-item {
+    border: 1px solid #333333;
+    width: 5px;
+    aspect-ratio: 1;
+}
