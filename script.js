@@ -9,14 +9,17 @@ startButton.addEventListener('click', () => {
 
     //Retrieve user grid size at a maximum of 100
     grid = Math.min(gridSize(), 100);
-
+    let block;
     for (let i = 0; i < grid * grid; i++) {
-        const block = document.createElement("div")
+        block = document.createElement("div")
         block.classList.add("block-item")
+        block.addEventListener("mouseenter", function () {
+            this.style.opacity > 0? this.style.opacity -= 0.1:0;
+        });
         container.appendChild(block)
+        block.style.opacity = "1"
         block.style.width = "calc(100% /" + grid + ")"
     }
-
     startButton.innerText = "Reset?"
 })
 
