@@ -10,6 +10,7 @@ startButton.addEventListener('click', () => {
             const block = document.createElement("div")
             block.classList.add("block-item")
             container.appendChild(block)
+            block.style.width = "calc(100% /" + grid + ")"
         }
     }
 })
