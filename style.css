@@ -1,3 +1,7 @@
+body {
+    background: #1e1e1e;
+}
+
 #container {
     max-width: 800px ;
     margin: auto;
@@ -6,7 +10,23 @@
 }
 
 .block-item {
-    box-shadow:0px 0px 0px 1px #ffffff inset;
-    background:#fafafa; 
+    box-shadow:0px 0px 0px 1px #f9f9f9 inset;
+    background:#ffffff; 
     aspect-ratio: 1;
+}
+
+#startButton {
+    background: #101010;
+    border: 2px solid #ffffff;
+    padding: 5px 22px;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#above-container {
+    text-align: center;
+    margin: 20px 0px;
 }
